@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    background-image: url(imagenes_obras/marmol.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: 100% 250%;
+}
+
+.bloquetitulo{
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: center;
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ptitulo{
+    margin-top: -40px;
+    font-size: 25px;
+}
+.content_two{
+    width: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03 em;
+    line-height: 1.6;
+}
+
+.container{
+    width: 100%;
+    height: 600pz;
+    display: flex;
+    justify-content:center ;
+    /* flex-wrap: wrap----> Si no hay espacio en la pantalla, ubica las imagenes o el <div> una bajo la otra */
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.container .card{
+    width: 400px;
+    height: 600px;
+    border-radius: 8px;
+    /* Le da la sombra */
+    box-shadow: 0 2px 2px rgba(0, 0,0, 0.2);
+    /* especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque. Usando la propiedad overflow con un valor distinto a visible , valor por defecto, creará un nuevo contexto de formatos de bloques */
+    overflow: auto;
+    margin: 0 10px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.74);
+}
+
+.container .card img{
+    height: 79%;
+    width: 99%;
+}
+
+.container .card p{
+    padding: 0.5 rem;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+.textofooter{
+    padding-top: 8px;
+    width: 100%;
+    height: 140px;
+    font-family: cursive;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 15px;
+    background-color: salmon;
+    padding-bottom: 10%;   
+}
+
+.iconosredes{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.iconosredes{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 120px;
+}

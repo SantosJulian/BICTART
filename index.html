@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina BICTART</title>
+    <!-- vinculo el archivo CSS (muy importante) -->
+    <link rel="stylesheet" href="css_home/menu.css">
+    <link rel="stylesheet" href="css_home/banner.css">
+    <link rel="stylesheet" href="css_home/contenido.css">
+    <link rel="stylesheet" href="css_home/footer.css">
+</head>
+<body>
+    
+    <header class="iconobitart">
+        <a href="/index.html"><img class="img_logo" src="iconos/iconobitart.png" alt="IIIISH no funciona" width="180px" height="200px"></a>
+    </header>
+    
+    <!-- input= se usa para crear controles interactivos para formularios basados en la web, que reciban datos del usuario
+         label= representa una etiqueta para un elemento en una interfaz de usuario,Este puede estar asociado con un control ya sea mediante la utilizacion del atributo for, o ubicando el control dentro del elemento label. Tal control es llamado "el control etiquetado" del elemento label
+         id= define un identificador único (ID) el cual no debe repetirse en todo el documento -->
+    <header class="main_header">
+    <input type="checkbox"  id="boton_menu">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">INICIO</a> </li>
+                <li><a href="Obras/obras.html">OBRAS</a> </li>
+
+            </ul>
+        </nav>
+    </header>
+<!-- section... toma una seccion total de la pagina -->
+    <section>    
+        <article>
+            <ul class="slider-portada">
+                <li>
+                <!-- el type="radio" le da las bolitas en la parte inferior de las viñetas, siempre se le da un name
+                    El checked rectifica que se cargue el atributo primero-->
+                    <input type="radio" id="sbutton1" name="sradio" checked>
+                    <label for="sbutton1"></label>
+
+                    <img src="imagenes/obra1.jpg" alt="obra1">
+                </li>
+
+                <li>
+                    <input type="radio" id="sbutton2" name="sradio">
+                    <label for="sbutton2"></label>
+
+
+                    <img src="imagenes/obra2.jpg" alt="obra2">
+                </li>
+
+                <li>
+                    <input type="radio" id="sbutton3" name="sradio">
+                    <label for="sbutton3"></label>
+
+
+                    <img src="imagenes/obra3.jpg" alt="obra3">
+                </li>
+
+                <li>
+                    <input type="radio" id="sbutton4" name="sradio">
+                    <label for="sbutton4"></label>
+
+
+                    <img src="imagenes/obra4.jpg" alt="obra4">
+                </li>
+            </ul>
+        </article>
+
+
+
+    </section>
+
+    <article class="bloquetitulo">
+        <h1>Bienvenido a una Pagina Que Aprecia el Arte</h1>
+        <section class="parrafotitulo1">
+            <p>El arte es el concepto que engloba todas las creaciones realizadas por el ser humano <br>
+                para expresar una visión sensible acerca del mundo, ya sea real o imaginario. <br>
+                se vale de diversos recursos, pudiendo ser plásticos, sonoros o lingüísticos,<br>
+                con el fin de expresar ideas, emociones, percepciones y sensaciones.
+            </p>
+
+            <div class="imagenparrafo">
+                <img src="iconos/milo-venus.png" alt="milovenus">
+
+
+            </div>
+        </section>
+
+
+    </article>
+
+    <article class="bloquetitulo2">
+        <h1>El arte en Lienzos</h1>
+
+        <section class="parrafotitulo2">
+            <hr width="600px" color="salmon">
+            <p> 
+                Cuando el arte es un placer <br>
+                El arte les brinda un medio a las personas <br>
+                para expresarse, ya que puede ser utilizado para <br>
+                difundir ideas, emociones, opiniones o creencias<br>
+                Dali, Da Vinci, Marques entre otros... <br>
+                Siendo los pintores mas destacados de la historia <br>
+                Simplemente haz <span style="color:gold;">click</span>
+                en el video<br>
+            </p>
+        </section>
+
+        <section class="videopintores">
+            <video src="video/videopintores.mp4"  width="510px" height="370px" controls ></video>
+
+        </section>
+    </article>
+
+    <!-- representa contenido independiente, a menudo con un título. Si bien se relaciona con el flujo principal, su posición es independiente de éste -->
+    <figure class="fotografia">
+
+        <img src="imagenes/bobross.jpg" alt="bobross" class="fotobob">
+
+        <i><q>No es un error, es un accidente feliz</i><br>
+        <i><q>Puedes hacer lo que quieras en tu pequeño mundo</i>
+            <br> -Bob Ross.</q>
+
+    </figure>
+
+    <footer>
+
+        
+        <section class="partefooter">
+
+            <h1 class="titulomapa">Tambien puedes ubicarnos aqui:</h1>
+
+            <div class="contenidof">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15907.495052648595!2d-74.0652613!3d4.61659905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1579787416862!5m2!1ses!2sco" 
+                    width="500" height="450" frameborder="0" style="border:1" border-radius="100%" allowfullscreen=""></iframe>"
+
+            <!-- form es la etiqueta formulario y el action reconoce los datos ingresados -->
+            <form action="#">   
+
+                <h2 >Contacto</h2>
+                <!-- Placeholder pone una caja de texto donde el usuario puede ingresar sus datos
+                     maxlength define un maximo de caracteres a ingresar -->
+                <input type="text" name="Nombre" placeholder="Nombre" maxlength="35">
+                <input type="email" name="Correo" placeholder="Correo">
+                <input type="number" name="telefono" placeholder="Telefono">
+                <textarea name="mensaje"placeholder="Escriba aqui su texto"> </textarea>    
+                <input type="button" id="boton" value="Enviar">
+            </form>
+
+            </div>
+        </section>
+    
+        <div class="contenidoiconos">
+        <hr width="85%" color="salmon">
+
+        <div class="iconosredes"> 
+            <div class="ajusteicono">
+                <!-- target ="_blank" abre una nueva pestaña en el navegador -->
+                <a href="https://twitter.com/bictia" target="_blank"> <img src="iconos/twitter.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/bictia/" target="_blank"> <img src="iconos/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/Bictia/" target="_blank"> <img src="iconos/facebook.png" alt="facebook"></a>
+            </div>
+        </div>
+        </div>
+            <div class="textofooter">
+                <p>
+                    Copyright (c) 2020 Institute of Tecnology
+                    All Rights Reserved
+                    <br>
+                    This product is protected by copyright and distributed under
+                    licenses restricting copying, distribution, and decompilation.
+                    <br>
+                    Bogota-BICTIA-Colombia.
+
+                </p>
+            </div>
+
+
+    </footer>
+</body>
+</html>
